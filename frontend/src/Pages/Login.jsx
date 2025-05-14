@@ -23,9 +23,8 @@ const Login = () => {
 
             }
             const res = await axios.post(`${import.meta.env.VITE_URI}/api/users/login`, formData);
-
-            localStorage.setItem("token", res.data.token);
             navigate("/");
+            localStorage.setItem("token", res.data.token);
         } catch (err) {
             console.error(err);
             err.response ? alert(err.response.data.message) : alert(err.message)
