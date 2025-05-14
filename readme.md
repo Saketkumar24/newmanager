@@ -109,4 +109,4 @@ This project is open-source and available under the MIT License.
 ---
 
 Please Note:
-Once logged in you need to refresh the windown.
+Once logged in you need to refresh the window.
