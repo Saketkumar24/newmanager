@@ -18,6 +18,7 @@ function App() {
         {token ? (
           <>
             <Route path='/projects' element={<Dashboard />} />
+            ---
             <Route path="/create-project" element={<ProjectsPage />} />
             <Route path="/project/:projectId" element={<ProjectDetailPage />} />
             <Route path="/" element={<Dashboard />} />

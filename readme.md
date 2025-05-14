@@ -28,16 +28,13 @@ Personal Task Manager is a full-stack task tracking application built with React
 ---
 
 ## 📁 Project Structure
-
+```
 task-manager/
 ├── backend/ # Express backend
 │ └── .env # Backend environment variables
 └── frontend/ # React frontend with Vite + Tailwind
 └── .env # Frontend environment variables
-
-yaml
-Copy
-Edit
+```
 
 ---
 
@@ -53,49 +50,37 @@ Edit
 
 ### 1. Clone the Repository
 
-```bash
+```
 git clone https://github.com/Saketkumar24/newmanager.git
 cd newmanager
+```
 2. Backend Setup
-bash
-Copy
-Edit
+```
 cd backend
 npm install
-Create a .env file inside the backend folder:
-
-env
-Copy
-Edit
+```
+3. Create a .env file inside the backend folder:
+```
 PORT=3001
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
-Start the backend server:
-
-bash
-Copy
-Edit
+```
+4. Start the backend server:
+```
 npm run dev
-3. Frontend Setup
-bash
-Copy
-Edit
+```
+5. Frontend Setup
+```
 cd ../frontend
 npm install
 Create a .env file inside the frontend folder:
-
 env
-Copy
-Edit
 VITE_API_URL=http://localhost:3001
 Note: All frontend environment variables must be prefixed with VITE_ (required by Vite).
 
 Start the frontend development server:
-
-bash
-Copy
-Edit
 npm run dev
+```
 🌐 URLs
 Frontend: http://localhost:5173
 
@@ -105,17 +90,13 @@ Live Website: https://newmanager-ltj2.vercel.app/
 
 📬 Support
 If you encounter any issues or have questions, feel free to open an issue or reach out.
-
+Email:
+```
+saketchaudhary170@gmail.com
+```
 📄 License
 This project is open-source and available under the MIT License.
 
-yaml
-Copy
-Edit
+
 
 ---
-
----
-
-Let me know if you want this in a downloadable `.md` file, or if you want to include screenshot links, `.env.example` files, or deployment steps for Render or Vercel.
-
