@@ -25,7 +25,6 @@ const Signup = () => {
 
             }
             await axios.post(`${import.meta.env.VITE_URI}/api/users/register`, formData);
-            alert("Registered successfully!");
             navigate("/login");
         } catch (err) {
             console.error(err);

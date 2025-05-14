@@ -23,7 +23,6 @@ const Login = () => {
 
             }
             const res = await axios.post(`${import.meta.env.VITE_URI}/api/users/login`, formData);
-            alert("login successfully!");
 
             localStorage.setItem("token", res.data.token);
             navigate("/");
