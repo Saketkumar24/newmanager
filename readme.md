@@ -1,98 +1,107 @@
-# Personal Task Manager
+# 📋 Personal Task Manager
 
-A full-featured Task Tracker web app built using the **MERN stack** (MongoDB, Express.js, React, Node.js) with JWT authentication. It allows users to manage multiple projects (max 4), create tasks inside them, track task status, and more — all from a clean dashboard.
-
-🔗 **Live Website:** [https://newmanager-ltj2.vercel.app/](https://newmanager-ltj2.vercel.app/)
-
-
-
-
-
-
-- 🔐 Secure JWT-based user authentication
-- 👤 User profile view
-- 📁 Max 4 projects per user
-- ✅ Add, update, delete tasks within projects
-- 📊 Task status: Pending / In Progress / Completed
-- 📅 Created and Completed timestamps
-- 🖥️ Responsive UI
-- ⚙️ Modular backend structure with proper MVC pattern
+Personal Task Manager is a full-stack task tracking application built with React (Vite + Tailwind CSS) on the frontend and Node.js + Express on the backend. MongoDB is used as the database. It allows users to create up to 4 projects, manage tasks with status updates, and track completion efficiently.
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Tech Stack
 
-- **Frontend:** ReactJS, TailwindCSS, React Router, Lucide Icons
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB + Mongoose
-- **Authentication:** JWT (LocalStorage)
-- **Hosting:** Vercel (Frontend), Render (Backend suggested)
+### Frontend
+- React
+- Vite
+- Tailwind CSS
+- Axios
+- React Router
+- Lucide React Icons
+
+### Backend
+- Node.js
+- Express.js
+- Mongoose
+
+### Others
+- dotenv
+- cookie-parser
+- cors
+- jsonwebtoken (JWT)
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
-root/
-├── backend/
-│ ├── controllers/
-│ ├── models/
-│ ├── routes/
-│ ├── middlewares/
-│ └── server.js
-├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── App.jsx
-│ │ └── main.jsx
-│ └── public/
-└── README.md
+task-manager/
+├── backend/ # Express backend
+│ └── .env # Backend environment variables
+└── frontend/ # React frontend with Vite + Tailwind
+└── .env # Frontend environment variables
+
 
 
 ---
 
-## 🧪 Getting Started (Run Locally)
+## ✅ Prerequisites
 
-### 📌 Prerequisites
-
-- Node.js (v16+)
-- MongoDB (local or MongoDB Atlas)
+- Node.js (v16 or later)
+- MongoDB (Local or Atlas)
 - Git
 
 ---
 
-Starting the server and the frontend application:
+## 🛠️ Installation & Setup
 
-### 🔧 1. Clone the Repo
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Saketkumar24/newmanager.git
 cd newmanager
 
-
-
-2. Setup Backend
+2. Backend Setup
 
 cd backend
 npm install
 
-
-3. Create a .env file in /backend:
+Create a .env file inside the backend folder:
 
 PORT=3001
-MONGO_URI=your_mongodb_connection_uri(Create using MongoDB Atlas by getting logged in through google account)
-JWT_SECRET=your_jwt_secret(anythingyoucankeep)
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+Start the backend server:
 
-4.Start Backend Server:
+npm run dev
 
-nodemon index.js
-
-3. Setup Frontend
+3. Frontend Setup
 
 cd ../frontend
 npm install
 
+Create a .env file inside the frontend folder:
 
-▶️ Start Frontend:
+VITE_API_URL=http://localhost:3001
+Note: All frontend environment variables must be prefixed with VITE_ (required by Vite).
+
+Start the frontend development server:
 
 npm run dev
+
+
+🌐 URLs
+Frontend: http://localhost:5173
+
+Backend API: http://localhost:3001
+
+Live Website: https://newmanager-ltj2.vercel.app/
+
+📬 Support
+If you encounter any issues or have questions, feel free to open an issue or reach out.
+
+📄 License
+This project is open-source and available under the MIT License.
+
+ License
+This project is open-source and available under the MIT License.
+
+---
+
+Let me know if you want this in a downloadable `.md` file, or if you want to include screenshot links, `.env.example` files, or deployment steps for Render or Vercel.
+
+
