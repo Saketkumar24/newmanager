@@ -90,7 +90,10 @@ Live Website: https://newmanager-ltj2.vercel.app/
 
 📬 Support
 If you encounter any issues or have questions, feel free to open an issue or reach out.
-
+Email:
+```
+saketchaudhary170@gmail.com
+```
 📄 License
 This project is open-source and available under the MIT License.
 
