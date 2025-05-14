@@ -21,13 +21,12 @@ function App() {
             <Route path="/create-project" element={<ProjectsPage />} />
             <Route path="/project/:projectId" element={<ProjectDetailPage />} />
             <Route path="/" element={<Dashboard />} />
-            <Route path="/register" element={<Signup />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="*" element={<Login />} />
           </>
         ) : (
           <>
-
+            <Route path="/register" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="*" element={<Login />} />
           </>
         )}
       </Routes>
