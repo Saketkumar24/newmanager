@@ -48,7 +48,7 @@ const Login = () => {
                 </div>
 
                 <div className="md:w-1/2 bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full mx-auto">
-                    <h2 className="text-2xl font-bold text-center text-blue-800 mb-6">Create Your Account</h2>
+                    <h2 className="text-2xl font-bold text-center text-blue-800 mb-6">Welcome Back!</h2>
 
                     <form onSubmit={handleSubmit} className="space-y-4">
 
